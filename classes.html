@@ -169,104 +169,8 @@
         </div>
         <div class="row">
           <div class="col-md-10 offset-md-1 col-lg-12 offset-lg-0">
-            <div class="row">
-              <!-- Service Item 1 -->
-              <div class="col-sm-6 col-lg-4">
-                <div class="service-item">
-                  <div class="inner-content">
-                    <div class="thumb">
-                      <a href="card-details.html?card=1">
-                        <span><img src="assets/img/service/1.jpg" alt="Image"></span>
-                      </a>
-                    </div>
-                    <div class="content">
-                      <h4 class="title"><a href="card-details.html?card=1">КЛАСС БОДИБИЛДИНГА</a></h4>
-                      <h4 class="class-time">Продолжительность: 50 минут</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Service Item 2 -->
-              <div class="col-sm-6 col-lg-4">
-                <div class="service-item">
-                  <div class="inner-content">
-                    <div class="thumb">
-                      <a href="card-details.html?card=2">
-                        <span><img src="assets/img/service/2.jpg" alt="Image"></span>
-                      </a>
-                    </div>
-                    <div class="content">
-                      <h4 class="title"><a href="card-details.html?card=2">ФИТНЕС КЛАСС</a></h4>
-                      <h4 class="class-time">Продолжительность: 45 минут</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Service Item 3 -->
-              <div class="col-sm-6 col-lg-4">
-                <div class="service-item">
-                  <div class="inner-content">
-                    <div class="thumb">
-                      <a href="card-details.html?card=3">
-                        <span><img src="assets/img/service/3.jpg" alt="Image"></span>
-                      </a>
-                    </div>
-                    <div class="content">
-                      <h4 class="title"><a href="card-details.html?card=3">КЛАСС КРОССФИТА</a></h4>
-                      <h4 class="class-time">Продолжительность: 35 минут</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Service Item 4 -->
-              <div class="col-sm-6 col-lg-4">
-                <div class="service-item">
-                  <div class="inner-content">
-                    <div class="thumb">
-                      <a href="card-details.html?card=4">
-                        <span><img src="assets/img/service/4.jpg" alt="Image"></span>
-                      </a>
-                    </div>
-                    <div class="content">
-                      <h4 class="title"><a href="card-details.html?card=4">ЙОГА КЛАСС</a></h4>
-                      <h4 class="class-time">Продолжительность: 25 минут</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Service Item 5 -->
-              <div class="col-sm-6 col-lg-4">
-                <div class="service-item">
-                  <div class="inner-content">
-                    <div class="thumb">
-                      <a href="card-details.html?card=5">
-                        <span><img src="assets/img/service/5.jpg" alt="Image"></span>
-                      </a>
-                    </div>
-                    <div class="content">
-                      <h4 class="title"><a href="card-details.html?card=5">КЛАСС БОЕВЫХ ИСКУССТВ</a></h4>
-                      <h4 class="class-time">Продолжительность: 30 минут</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Service Item 6 -->
-              <div class="col-sm-6 col-lg-4">
-                <div class="service-item">
-                  <div class="inner-content">
-                    <div class="thumb">
-                      <a href="card-details.html?card=6">
-                        <span><img src="assets/img/service/6.jpg" alt="Image"></span>
-                      </a>
-                    </div>
-                    <div class="content">
-                      <h4 class="title"><a href="card-details.html?card=6">КЛАСС КАРДИО</a></h4>
-                      <h4 class="class-time">Продолжительность: 40 минут</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End of Service Items -->
+            <div class="row" id="classesContainer">
+
             </div>
           </div>
         </div>
@@ -531,6 +435,84 @@
 </div>
 
 <!--=======================Javascript============================-->
+
+<script>
+
+const courses = [
+      {
+        id: 1,
+        title: "Класс по бодибилдингу",
+        description: "Подробное описание класса по бодибилдингу.",
+        duration: "50 минут",
+        image: "assets/img/service/1.jpg"
+      },
+      {
+        id: 2,
+        title: "Фитнес класс",
+        description: "Подробное описание фитнес класса.",
+        duration: "45 минут",
+        image: "assets/img/service/2.jpg"
+      },
+      {
+        id: 3,
+        title: "Класс кроссфита",
+        description: "Подробное описание класса кроссфита.",
+        duration: "35 минут",
+        image: "assets/img/service/3.jpg"
+      },
+      {
+        id: 4,
+        title: "Йога класс",
+        description: "Подробное описание йога класса.",
+        duration: "25 минут",
+        image: "assets/img/service/4.jpg"
+      },
+      {
+        id: 5,
+        title: "Класс боевых искусств",
+        description: "Подробное описание класса боевых искусств.",
+        duration: "30 минут",
+        image: "assets/img/service/5.jpg"
+      },
+      {
+        id: 6,
+        title: "Кардио класс",
+        description: "Подробное описание кардио класса.",
+        duration: "40 минут",
+        image: "assets/img/service/6.jpg"
+      }
+    ];
+
+    const container = document.getElementById("classesContainer");
+
+    // Loop over the array and create a card for each course
+    courses.forEach((course, index) => {
+      const card = document.createElement("div");
+      card.className = "col-sm-6 col-lg-4";
+      card.innerHTML = `
+        <div class="service-item">
+          <div class="inner-content">
+            <div class="thumb">
+              <a href="class-details.html?index=${index}">
+                <span><img src="${course.image}" alt="${course.title}></span>
+              </a>
+            </div>
+            <div class="content">
+              <h4 class="title"><a href="class-details.html?card=${index}">${course.title}</a></h4>
+              <h4 class="class-time">Продолжительность: ${course.duration}</h4>
+            </div>
+          </div>
+        </div>
+      `;
+      container.appendChild(card);
+    });
+
+
+</script>
+
+
+
+
 <!--=== Modernizr Min Js ===-->
 <script src="assets/js/modernizr.js"></script>
 <!--=== jQuery Min Js ===-->
