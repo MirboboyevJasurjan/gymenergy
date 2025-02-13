@@ -486,14 +486,14 @@ const courses = [
     const container = document.getElementById("classesContainer");
 
     // Loop over the array and create a card for each course
-    courses.forEach((course, index) => {
+    courses.forEach(course => {
       const card = document.createElement("div");
       card.className = "col-sm-6 col-lg-4";
       card.innerHTML = `
         <div class="service-item">
           <div class="inner-content">
             <div class="thumb">
-              <a href="class-details.html?index=${course.id}">
+              <a href="class-details.html?card=${course.id}">
                 <span><img src="${course.image}" alt="${course.title}></span>
               </a>
             </div>
