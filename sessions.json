@@ -1,0 +1,129 @@
+[
+    {
+      "id": "1-20250515-1500",
+      "courseId": 1,
+      "course": "Класс бодибилдинга",
+      "date": "2025-05-15",
+      "time": "15:00 – 16:30",
+      "weekday": "Четверг",
+      "instructor": "Robert Cristopher"
+    },
+    {
+      "id": "1-20250518-0900",
+      "courseId": 1,
+      "course": "Класс бодибилдинга",
+      "date": "2025-05-18",
+      "time": "09:00 – 10:30",
+      "weekday": "Воскресенье",
+      "instructor": "Nikolus Smith"
+    },
+    {
+      "id": "1-20250519-0900",
+      "courseId": 1,
+      "course": "Класс бодибилдинга",
+      "date": "2025-05-19",
+      "time": "09:00 – 10:30",
+      "weekday": "Понедельник",
+      "instructor": "Nikolus Smith"
+    },
+    {
+      "id": "2-20250516-1700",
+      "courseId": 2,
+      "course": "Фитнес класс",
+      "date": "2025-05-16",
+      "time": "17:00 – 18:00",
+      "weekday": "Пятница",
+      "instructor": "Oliviea Williams"
+    },
+    {
+      "id": "2-20250520-0800",
+      "courseId": 2,
+      "course": "Фитнес класс",
+      "date": "2025-05-20",
+      "time": "08:00 – 09:00",
+      "weekday": "Вторник",
+      "instructor": "Oliviea Williams"
+    },
+    {
+      "id": "3-20250516-0600",
+      "courseId": 3,
+      "course": "Класс кроссфита",
+      "date": "2025-05-16",
+      "time": "06:00 – 07:00",
+      "weekday": "Пятница",
+      "instructor": "Nikolus Smith"
+    },
+    {
+      "id": "3-20250519-0600",
+      "courseId": 3,
+      "course": "Класс кроссфита",
+      "date": "2025-05-19",
+      "time": "06:00 – 07:00",
+      "weekday": "Понедельник",
+      "instructor": "Nikolus Smith"
+    },
+    {
+      "id": "3-20250521-0600",
+      "courseId": 3,
+      "course": "Класс кроссфита",
+      "date": "2025-05-21",
+      "time": "06:00 – 07:00",
+      "weekday": "Среда",
+      "instructor": "Nikolus Smith"
+    },
+    {
+      "id": "4-20250515-0700",
+      "courseId": 4,
+      "course": "Йога класс",
+      "date": "2025-05-15",
+      "time": "07:00 – 07:30",
+      "weekday": "Четверг",
+      "instructor": "Jenifer Parker"
+    },
+    {
+      "id": "4-20250520-0700",
+      "courseId": 4,
+      "course": "Йога класс",
+      "date": "2025-05-20",
+      "time": "07:00 – 07:30",
+      "weekday": "Вторник",
+      "instructor": "Jenifer Parker"
+    },
+    {
+      "id": "5-20250519-1700",
+      "courseId": 5,
+      "course": "Класс боевых искусств",
+      "date": "2025-05-19",
+      "time": "17:00 – 17:30",
+      "weekday": "Понедельник",
+      "instructor": "Alvin Santiago"
+    },
+    {
+      "id": "5-20250521-1700",
+      "courseId": 5,
+      "course": "Класс боевых искусств",
+      "date": "2025-05-21",
+      "time": "17:00 – 17:30",
+      "weekday": "Среда",
+      "instructor": "Alvin Santiago"
+    },
+    {
+      "id": "6-20250515-1800",
+      "courseId": 6,
+      "course": "Кардио класс",
+      "date": "2025-05-15",
+      "time": "18:00 – 19:00",
+      "weekday": "Четверг",
+      "instructor": "Halbert Bourn"
+    },
+    {
+      "id": "6-20250520-1800",
+      "courseId": 6,
+      "course": "Кардио класс",
+      "date": "2025-05-20",
+      "time": "18:00 – 19:00",
+      "weekday": "Вторник",
+      "instructor": "Halbert Bourn"
+    }
+  ]
+  

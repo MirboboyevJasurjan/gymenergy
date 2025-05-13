@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-<!-- Mirrored from htmldemo.net/zymzoo/zymzoo/class-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2025 12:56:46 GMT -->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -59,66 +58,33 @@
   <header class="header-area header-default header-transparent header-style sticky-header">
     <div class="container">
       <div class="row row-gutter-0 align-items-center">
-        <div class="col-4 col-xs-3 col-sm-3 col-md-3 col-xl-3">
+        <div class="col-4 col-xs-2 col-sm-2 col-md-2 col-xl-2">
           <div class="header-logo-area">
             <a href="index.html">
-              <img class="logo-main" src="assets/img/logo-light.png" alt="Логотип" />
-              <img class="logo-light" src="assets/img/logo-light.png" alt="Логотип" />
+              <img class="logo-main" src="assets/img/logo-light.png" alt="Logo" />
+              <img class="logo-light" src="assets/img/logo-light.png" alt="Logo" />
             </a>
           </div>
         </div>
-        <div class="col-8 col-sm-9 col-xl-9">
+        <div class="col-8 col-sm-9 col-xl-10">
           <div class="header-align">
             <div class="header-navigation-area d-none d-xl-block">
               <ul class="main-menu nav position-relative">
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="about.html">О нас</a></li>
-                <li class="has-submenu"><a href="blog.html">Страницы</a>
-                  <ul class="submenu-nav">
-                    <li><a href="login-register.html">Логин/Регистрация</a></li>
-                  </ul>
-                </li>
-                <li class="has-submenu"><a href="classes.html">Курсы</a>
-                  <ul class="submenu-nav">
-                    <li><a href="classes.html">Курсы</a></li>
-                    <li><a href="class-details.html">Детали Класса</a></li>
-                  </ul>
-                </li>
-                <li class="has-submenu"><a href="shop.html">Магазин</a>
-                  <ul class="submenu-nav">
-                    <li><a href="shop.html">Магазин</a></li>
-                    <li><a href="shop-left-sidebar.html">Левая панель</a></li>
-                    <li><a href="shop-right-sidebar.html">Правая панель</a></li>
-                    <li><a href="shop-no-sidebar.html">Без панелей</a></li>
-                    <li><a href="shop-single-product.html">Детали товара</a></li>
-                    <li><a href="shop-single-product-left-sidebar.html">Товар - Левая панель</a></li>
-                    <li><a href="shop-single-product-right-sidebar.html">Товар - Правая панель</a></li>
-                    <li><a href="shop-single-product-no-sidebar.html">Товар - Без панелей</a></li>
-                  </ul>
-                </li>
-                <li class="has-submenu"><a href="team.html">Тренеры</a>
-                  <ul class="submenu-nav">
-                    <li><a href="team.html">Тренеры</a></li>
-                    <li><a href="team-details.html">Детали Тренера</a></li>
-                  </ul>
-                </li>
-                <li class="has-submenu"><a href="blog.html">Блог</a>
-                  <ul class="submenu-nav">
-                    <li><a href="blog-left-sidebar.html">Блог - Левая панель</a></li>
-                    <li><a href="blog-right-sidebar.html">Блог - Правая панель</a></li>
-                    <li><a href="blog-no-sidebar.html">Блог - Без панелей</a></li>
-                    <li><a href="blog-details.html">Детали Блога - Левая панель</a></li>
-                    <li><a href="blog-details-right-sidebar.html">Детали Блога - Правая панель</a></li>
-                    <li><a href="blog-details-no-sidebar.html">Детали Блога - Без панелей</a></li>
-                  </ul>
-                </li>
+                <li class="has-submenu"><a href="classes.html">Курсы</a></li>
+                <li class="has-submenu"><a href="shop.html">Магазин</a></li>
+                <li class="has-submenu"><a href="scheudle.html">Расписания</a></li>
+                <li class="has-submenu"><a href="team.html">Тренеры</a></li>
+                <!-- <li class="has-submenu"><a href="blog.html">Блог</a></li> --> 
                 <li><a href="contact.html">Контакты</a></li>
               </ul>
             </div>
             <div class="header-action-area">
               <div class="header-action-cart d-none d-xl-block">
                 <button class="btn-cart cart-icon" onclick="window.location.href='shop.html'">
-                  <i class="pe-7s-shopbag"></i>
+                  <!-- <span class="cart-count">2</span> -->
+                  <i class="pe-7s-user"></i>
                 </button>
               </div>
               <button class="btn-menu d-xl-none">
@@ -158,7 +124,7 @@
           <div class="col-lg-8">
             <div class="class-details-item">
               <div class="thumb">
-                <img class="w-100" id="classMainImage" src="assets/img/service/details/1.jpg" alt="Изображение">
+                <img class="w-50" id="classMainImage" src="assets/img/service/details/1.jpg" alt="Изображение">
               </div>
               <div class="content">
                 <h2 class="title" id="classMainTitle">Заголовок класса</h2>
@@ -233,63 +199,7 @@
               </div>
             </div>
             <!-- Блок "team-area" необязательный или может оставаться статичным -->
-            <div class="team-area">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="team-section-title">
-                    <h2 class="title">Инструкторы</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="row row-gutter-22 team-items-style2">
-                <div class="col-sm-6">
-                  <!-- Start Team Item -->
-                  <div class="team-item mb-xs-30">
-                    <div class="team-member">
-                      <div class="thumb">
-                        <a href="team-details.html"><img src="assets/img/team/10.jpg" alt="Изображение"></a>
-                      </div>
-                      <div class="content">
-                        <div class="member-info">
-                          <h4 class="name"><a href="team-details.html">Nikolus Smith</a></h4>
-                          <h6 class="designation">Тренер по бодибилдингу</h6>
-                          <div class="social-icons">
-                            <a href="#"><i class="fa fa-facebook icon"></i></a>
-                            <a href="#"><i class="fa fa-phone icon"></i></a>
-                            <a href="#"><i class="fa fa-instagram icon"></i></a>
-                            <a href="#"><i class="fa fa-twitter icon"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End Team Item -->
-                </div>
-                <div class="col-sm-6">
-                  <!-- Start Team Item -->
-                  <div class="team-item">
-                    <div class="team-member">
-                      <div class="thumb">
-                        <a href="team-details.html"><img src="assets/img/team/9.jpg" alt="Изображение"></a>
-                      </div>
-                      <div class="content">
-                        <div class="member-info">
-                          <h4 class="name"><a href="team-details.html">Robert Cristoper</a></h4>
-                          <h6 class="designation">Тренер по бодибилдингу</h6>
-                          <div class="social-icons">
-                            <a href="#"><i class="fa fa-facebook icon"></i></a>
-                            <a href="#"><i class="fa fa-phone icon"></i></a>
-                            <a href="#"><i class="fa fa-instagram icon"></i></a>
-                            <a href="#"><i class="fa fa-twitter icon"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End Team Item -->
-                </div>
-              </div>
-            </div>
+
           </div>
           <!-- Боковая панель (опционально) -->
           <div class="col-sm-8 col-md-6 col-lg-4">
@@ -301,12 +211,12 @@
                 <div class="widget-body widget-categorie-body">
                   <div class="widget-categories2">
                     <ul>
-                      <li><a href="./class-details?card=1.html">Fitness Class <span>View</span></a></li>
-                      <li><a href="./class-details?card=2.html">Crossfit Class<span>View</span></a></li>
-                      <li><a href="./class-details?card=3.html">Body Building Class<span>View</span></a></li>
-                      <li><a href="./class-details?card=4.html">Yoga Class<span>View</span></a></li=>
-                      <li><a href="./class-details?card=5.html">Martial Art Class<span>View</span></a></li>
-                      <li><a href="./class-details?card=6.html">Cardio Class<span>View</span></a></li>
+                      <li><a href="./class-details.html?card=1">Fitness Class <span>View</span></a></li>
+                      <li><a href="./class-details.html?card=2">Crossfit Class<span>View</span></a></li>
+                      <li><a href="./class-details.html?card=3">Body Building Class<span>View</span></a></li>
+                      <li><a href="./class-details.html?card=4">Yoga Class<span>View</span></a></li=>
+                      <li><a href="./class-details.html?card=5">Martial Art Class<span>View</span></a></li>
+                      <li><a href="./class-details.html?card=6">Cardio Class<span>View</span></a></li>
                     </ul>
                   </div>
                 </div>
@@ -387,7 +297,7 @@
           <div class="row align-items-center">
             <div class="col-12">
               <div class="widget-copyright text-center">
-                <p><i class="fa fa-copyright"></i> 2021 Сделано с <i class="fa fa-heart"></i> 
+                <p><i class="fa fa-copyright"></i> 2025 Сделано с <i class="fa fa-heart"></i> 
                   <a target="_blank" href="https://www.hasthemes.com/">HasThemes</a>
                 </p>
               </div>
@@ -430,229 +340,74 @@
   <!--== End Side Menu ==-->
 </div>
 
-<!--=======================Javascript============================-->
-
-<!--=== Here is the array in Russian + injection script ===-->
 <script>
-  // Массив данных о классах (на русском языке)
-  const courses = [
-    {
-      id: 1,
-      title: "Класс бодибилдинга",
-      shortDesc: "Интенсивные тренировки для развития силы и мышц.",
-      paragraphs: [
-        "Бодибилдинг — это комплекс упражнений с отягощениями для наращивания мышечной массы.",
-        "Мы используем прогрессивную нагрузку и правильную технику для безопасного роста."
-      ],
-      details: "Регулярное посещение — ключ к успеху. Мы рекомендуем придерживаться программы и следить за питанием.",
-      intensity: "Средняя и Высокая",
-      feel: "Высокая энергия",
-      group: "16 человек",
-      price: "$25/месяц",
-      instructors: "2 тренера",
-      duration: "50 минут",
-      image: "assets/img/service/details/1.jpg",
-      bringParagraph: "Рекомендуем взять удобную спортивную одежду, воду и полотенце.",
-      bringList: ["Бутылка для воды", "Удобная одежда", "Полотенце", "Положительный настрой"],
-      scheduleParagraph: "Ниже указано расписание занятий по бодибилдингу.",
-      schedule: [
-        { day: "Воскресенье", time: "9:00 – 10:30", instructor: "Nikolus Smith" },
-        { day: "Понедельник", time: "9:00 – 10:30", instructor: "Nikolus Smith" },
-        { day: "Среда", time: "15:00 – 16:30", instructor: "Robert Cristopher" },
-        { day: "Четверг", time: "15:00 – 16:30", instructor: "Robert Cristopher" }
-      ]
-    },
-    {
-      id: 2,
-      title: "Фитнес класс",
-      shortDesc: "Сочетание кардио и силовых упражнений для общей формы.",
-      paragraphs: [
-        "Фитнес класс поможет укрепить сердечно-сосудистую систему и развить выносливость.",
-        "Занятия подходят для всех уровней подготовки и направлены на поддержание тонуса."
-      ],
-      details: "Не забывайте про разминку и заминку, а также пейте достаточно воды.",
-      intensity: "Средняя",
-      feel: "Заряжает энергией",
-      group: "12 человек",
-      price: "$20/месяц",
-      instructors: "1 тренер",
-      duration: "45 минут",
-      image: "assets/img/service/details/2.jpg",
-      bringParagraph: "Возьмите воду, удобную обувь и спортивную форму.",
-      bringList: ["Вода", "Спортивная форма", "Лёгкое полотенце"],
-      scheduleParagraph: "Расписание фитнес занятий:",
-      schedule: [
-        { day: "Вторник", time: "8:00 – 9:00", instructor: "Oliviea Williams" },
-        { day: "Пятница", time: "17:00 – 18:00", instructor: "Oliviea Williams" }
-      ]
-    },
-    {
-      id: 3,
-      title: "Класс кроссфита",
-      shortDesc: "Высокоинтенсивные тренировки для силы и выносливости.",
-      paragraphs: [
-        "Кроссфит сочетает тяжёлую атлетику, кардио и гимнастику.",
-        "Занятия помогут развить функциональную силу и улучшить общую форму."
-      ],
-      details: "Мы предоставляем варианты для разных уровней, но важно следить за техникой.",
-      intensity: "Высокая",
-      feel: "Серьёзный вызов",
-      group: "10 человек",
-      price: "$30/месяц",
-      instructors: "2 тренера",
-      duration: "35 минут",
-      image: "assets/img/service/details/3.jpg",
-      bringParagraph: "Возьмите хорошее настроение и готовьтесь к интенсивной работе!",
-      bringList: ["Вода", "Перчатки (по желанию)", "Устойчивая обувь"],
-      scheduleParagraph: "Расписание кроссфит-занятий:",
-      schedule: [
-        { day: "Понедельник", time: "6:00 – 7:00", instructor: "Nikolus Smith" },
-        { day: "Среда", time: "6:00 – 7:00", instructor: "Nikolus Smith" },
-        { day: "Пятница", time: "6:00 – 7:00", instructor: "Nikolus Smith" }
-      ]
-    },
-    {
-      id: 4,
-      title: "Йога класс",
-      shortDesc: "Спокойные упражнения для гибкости и умиротворения.",
-      paragraphs: [
-        "Йога включает асаны, дыхательные практики и расслабление.",
-        "Подходит для всех возрастов, улучшает осанку и снижает стресс."
-      ],
-      details: "Мы рекомендуем взять коврик, но при необходимости можно использовать наш.",
-      intensity: "Низкая и Средняя",
-      feel: "Расслабляющая",
-      group: "15 человек",
-      price: "$18/месяц",
-      instructors: "1 тренер",
-      duration: "25 минут",
-      image: "assets/img/service/details/4.jpg",
-      bringParagraph: "Принесите коврик для йоги (если есть), удобную одежду и открытый разум.",
-      bringList: ["Коврик для йоги", "Вода", "Небольшое полотенце"],
-      scheduleParagraph: "Расписание йога-занятий:",
-      schedule: [
-        { day: "Вторник", time: "7:00 – 7:30", instructor: "Jenifer Parker" },
-        { day: "Четверг", time: "7:00 – 7:30", instructor: "Jenifer Parker" }
-      ]
-    },
-    {
-      id: 5,
-      title: "Класс боевых искусств",
-      shortDesc: "Развивайте скорость, координацию и самооборону.",
-      paragraphs: [
-        "Боевые искусства — это дисциплина, техника и уважение к сопернику.",
-        "Мы изучаем базовые приёмы разных стилей, делая упор на безопасность."
-      ],
-      details: "Форма (кимоно) необязательна, но удобная одежда приветствуется.",
-      intensity: "Средняя",
-      feel: "Мотивирующая",
-      group: "8 человек",
-      price: "$22/месяц",
-      instructors: "2 тренера",
-      duration: "30 минут",
-      image: "assets/img/service/details/5.jpg",
-      bringParagraph: "При желании можете принести перчатки или защиту. Вода тоже не помешает.",
-      bringList: ["Вода", "Удобная одежда", "Перчатки (по желанию)"],
-      scheduleParagraph: "Расписание занятий по боевым искусствам:",
-      schedule: [
-        { day: "Понедельник", time: "17:00 – 17:30", instructor: "Alvin Santiago" },
-        { day: "Среда", time: "17:00 – 17:30", instructor: "Alvin Santiago" }
-      ]
-    },
-    {
-      id: 6,
-      title: "Кардио класс",
-      shortDesc: "Улучшите работу сердца и сожгите калории.",
-      paragraphs: [
-        "Кардио класс ориентирован на длительные аэробные упражнения.",
-        "Он укрепляет сердечно-сосудистую систему и повышает выносливость."
-      ],
-      details: "Держите воду под рукой и следите за пульсом. Мы предложим модификации при необходимости.",
-      intensity: "Средняя и Высокая",
-      feel: "Интенсивная нагрузка",
-      group: "20 человек",
-      price: "$15/месяц",
-      instructors: "1 тренер",
-      duration: "40 минут",
-      image: "assets/img/service/details/6.jpg",
-      bringParagraph: "Удобная обувь для бега, вода и настрой на отличную кардиосессию!",
-      bringList: ["Кроссовки", "Вода", "Полотенце"],
-      scheduleParagraph: "Расписание кардио-занятий:",
-      schedule: [
-        { day: "Вторник", time: "18:00 – 19:00", instructor: "Halbert Bourn" },
-        { day: "Четверг", time: "18:00 – 19:00", instructor: "Halbert Bourn" }
-      ]
+  document.addEventListener('DOMContentLoaded', async () => {
+    /* 1. Читаем courses.json */
+    let courses = [];
+    try {
+      const res = await fetch('/courses.json');      // путь к JSON-файлу
+      courses = await res.json();
+    } catch (e) {
+      console.error('courses.json error', e);
+      document.getElementById('classTitleSpan').textContent = 'Ошибка данных';
+      return;
     }
-  ];
-
-  // Получаем значение ?card= из URL
-  function getQueryParam(param) {
-    const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get(param);
-  }
-
-  const cardId = parseInt(getQueryParam("card"), 10);
-  const courseData = courses.find(course => course.id === cardId);
-
-  if (courseData) {
-    // Перезаписываем placeholders
-    document.getElementById("classTitleSpan").innerText = courseData.title;
-    document.getElementById("classShortDesc").innerText = courseData.shortDesc;
-    document.getElementById("classMainImage").src = courseData.image;
-    document.getElementById("classMainImage").alt = courseData.title;
-    document.getElementById("classMainTitle").innerText = courseData.title;
-
-    // Параграфы
-    const [p1, p2] = courseData.paragraphs || [];
-    document.getElementById("para1").innerText = p1 || "";
-    document.getElementById("para2").innerText = p2 || "";
-
-    document.getElementById("detailsParagraph").innerText = courseData.details || "";
-
-    // Информация
-    document.getElementById("intensityVal").innerText = courseData.intensity || "Средняя";
-    document.getElementById("feelVal").innerText = courseData.feel || "Высокая энергия";
-    document.getElementById("groupVal").innerText = courseData.group || "16 человек";
-    document.getElementById("priceVal").innerText = courseData.price || "$25/месяц";
-    document.getElementById("instructorsVal").innerText = courseData.instructors || "2";
-    document.getElementById("durationVal").innerText = courseData.duration || "50 минут";
-
-    // Что взять с собой
-    document.getElementById("bringParagraph").innerText = courseData.bringParagraph || "";
-    const bringUl = document.getElementById("bringList");
-    bringUl.innerHTML = "";
-    if (courseData.bringList && courseData.bringList.length > 0) {
-      courseData.bringList.forEach(item => {
-        const li = document.createElement("li");
-        li.textContent = item;
-        bringUl.appendChild(li);
-      });
+  
+    /* 2. Определяем ID из URL (?id=1 или ?card=1) */
+    const params = new URLSearchParams(location.search);
+    const id = Number(params.get('id') || params.get('card'));
+  
+    const course = courses.find(c => c.id === id);
+    if (!course) {
+      document.getElementById('classTitleSpan').textContent = 'Класс не найден';
+      document.getElementById('classShortDesc').textContent = 'Нет информации.';
+      return;
     }
-
-    // Расписание
-    document.getElementById("scheduleParagraph").innerText = courseData.scheduleParagraph || "";
-    const scheduleBody = document.getElementById("scheduleBody");
-    scheduleBody.innerHTML = "";
-    if (courseData.schedule && courseData.schedule.length > 0) {
-      courseData.schedule.forEach(s => {
-        const row = document.createElement("tr");
-        row.innerHTML = `
-          <td>${s.day}</td>
-          <td class="time">${s.time}</td>
-          <td>${s.instructor}</td>
-        `;
-        scheduleBody.appendChild(row);
-      });
-    }
-  } else {
-    // Если ID не найден, отображаем сообщение
-    document.getElementById("classTitleSpan").innerText = "Класс не найден";
-    document.getElementById("classShortDesc").innerText = "Нет данных по этому классу.";
-    document.getElementById("classMainTitle").innerText = "Класс отсутствует";
-    document.getElementById("para1").innerText = "Пожалуйста, вернитесь к списку занятий и выберите корректный класс.";
-    document.getElementById("para2").innerText = "";
-  }
-</script>
+  
+    /* 3. Заполняем базовые поля */
+    setText('classTitleSpan',  course.title);
+    setText('classShortDesc',  course.shortDesc);
+    setAttr ('classMainImage', {src: course.image, alt: course.title});
+    setText('classMainTitle',  course.title);
+  
+    /* 4. Параграфы */
+    const [p1='', p2=''] = course.paragraphs || [];
+    setText('para1', p1); setText('para2', p2);
+    setText('detailsParagraph', course.details);
+  
+    /* 5. Инфо-блок */
+    setText('intensityVal',   course.intensity);
+    setText('feelVal',        course.feel);
+    setText('groupVal',       course.group);
+    setText('priceVal',       course.price);
+    setText('instructorsVal', course.instructors);
+    setText('durationVal',    course.duration);
+  
+    /* 6. Что взять с собой */
+    setText('bringParagraph', course.bringParagraph);
+    const ul = document.getElementById('bringList');
+    ul.innerHTML = '';
+    (course.bringList||[]).forEach(item =>
+      ul.insertAdjacentHTML('beforeend', `<li>${item}</li>`)
+    );
+  
+    /* 7. Расписание */
+    setText('scheduleParagraph', course.scheduleParagraph);
+    const tbody = document.getElementById('scheduleBody');
+    tbody.innerHTML = '';
+    (course.schedule||[]).forEach(s =>
+      tbody.insertAdjacentHTML('beforeend', `
+        <tr><td>${s.day}</td><td class="time">${s.time}</td><td>${s.instructor}</td></tr>
+      `)
+    );
+  
+    /* helpers */
+    function setText(id, txt){ const el=document.getElementById(id); if(el) el.textContent=txt||''; }
+    function setAttr(id, map){ const el=document.getElementById(id); if(!el) return;
+      Object.entries(map).forEach(([k,v])=> el[k]=v); }
+  });
+  </script>
+  
 
 <!--=== jQuery Min Js ===-->
 <script src="assets/js/jquery-main.js"></script>
@@ -692,5 +447,4 @@
 <script src="assets/js/custom.js"></script>
 
 </body>
-<!-- Mirrored from htmldemo.net/zymzoo/zymzoo/class-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2025 12:56:48 GMT -->
 </html>

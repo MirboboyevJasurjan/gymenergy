@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>Расписание занятий</title>
+
+  <!-- Sizning CSS’laringiz -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+    <!--== Start Header Wrapper ==-->
+    <header class="header-area header-default header-transparent header-style sticky-header bg-black">
+      <div class="container">
+        <div class="row row-gutter-0 align-items-center">
+          <div class="col-4 col-xs-2 col-sm-2 col-md-2 col-xl-2">
+            <div class="header-logo-area">
+              <a href="index.html">
+                <img class="logo-main" src="assets/img/logo-light.png" alt="Logo" />
+                <img class="logo-light" src="assets/img/logo-light.png" alt="Logo" />
+              </a>
+            </div>
+          </div>
+          <div class="col-8 col-sm-9 col-xl-10">
+            <div class="header-align">
+              <div class="header-navigation-area d-none d-xl-block">
+                <ul class="main-menu nav position-relative">
+                  <li><a href="index.html">Главная</a></li>
+                  <li><a href="about.html">О нас</a></li>
+                  <li class="has-submenu"><a href="classes.html">Курсы</a></li>
+                  <li class="has-submenu"><a href="shop.html">Магазин</a></li>
+                  <li class="has-submenu"><a href="scheudle.html">Расписания</a></li>
+                  <li class="has-submenu"><a href="team.html">Тренеры</a></li>
+                  <!-- <li class="has-submenu"><a href="blog.html">Блог</a></li> --> 
+                  <li><a href="contact.html">Контакты</a></li>
+                </ul>
+              </div>
+              <div class="header-action-area">
+                <div class="header-action-cart d-none d-xl-block">
+                  <button class="btn-cart cart-icon" onclick="window.location.href='shop.html'">
+                    <!-- <span class="cart-count">2</span> -->
+                    <i class="pe-7s-user"></i>
+                  </button>
+                </div>
+                <button class="btn-menu d-xl-none">
+                  <i class="fa fa-bars"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--== End Header Wrapper ==-->
+  <!-- Заголовок -->
+  <section class="page-title-area bg-img" data-bg-img="assets/img/photos/bg-page2.jpg">
+    <div class="container text-center py-60">
+      <h1 class="title mb-10">Расписание занятий</h1>
+      <p id="subHeader" class="lead">Ближайшие сессии загружаются…</p>
+    </div>
+  </section>
+
+  <!-- Таблица -->
+  <section class="schedule-area py-80">
+    <div class="container">
+      <table class="table table-bordered text-center">
+        <thead class="thead-dark">
+          <tr>
+            <th>Дата</th><th>День</th><th>Время</th><th>Класс</th><th>Инструктор</th>
+          </tr>
+        </thead>
+        <tbody id="scheduleBody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Скрипт -->
+  <script>
+  document.addEventListener('DOMContentLoaded', async () => {
+    /* 1. Курcлар JSON’ини o‘qiymiz */
+    let courses = [];
+    try {
+      const res = await fetch('/courses.json');   // yo‘lni kerak bo‘lsa o‘zgartiring
+      courses = await res.json();
+    } catch (err) {
+      document.getElementById('subHeader').textContent = 'Курсы не найдены 😕';
+      console.error('courses.json fetch error:', err);
+      return;
+    }
+
+    /* 2. Календар funksiyalari */
+    const dayIdx = d => ({
+      'Воскресенье':0,'Понедельник':1,'Вторник':2,
+      'Среда':3,'Четверг':4,'Пятница':5,'Суббота':6
+    }[d]);
+
+    const nextDate = (wd, time) => {
+      const [h, m] = time.split('–')[0].trim().split(':').map(Number);
+      const now = new Date();
+      const t   = new Date(now);
+      t.setHours(h, m, 0, 0);
+      const diff = (7 + wd - now.getDay()) % 7;
+      t.setDate(now.getDate() + diff);
+      if (t <= now) t.setDate(t.getDate() + 7);   // allaqachon o‘tib ketgan bo‘lsa
+      return t;
+    };
+
+    /* 3. Barcha mashg‘ulotlarni yig‘ish */
+    const sessions = [];
+    courses.forEach(c =>
+      (c.schedule || []).forEach(s => {
+        sessions.push({
+          date: nextDate(dayIdx(s.day), s.time),
+          day:  s.day,
+          time: s.time,
+          title: c.title,
+          instructor: s.instructor
+        });
+      })
+    );
+
+    /* 4. Sanaga ko‘ra sort */
+    sessions.sort((a,b) => a.date - b.date);
+
+    /* 5. Jadvalga render */
+    const tbody = document.getElementById('scheduleBody');
+    sessions.forEach(s => {
+      tbody.insertAdjacentHTML('beforeend', `
+        <tr>
+          <td>${s.date.toLocaleDateString('ru-RU')}</td>
+          <td>${s.day}</td>
+          <td>${s.time}</td>
+          <td>${s.title}</td>
+          <td>${s.instructor}</td>
+        </tr>
+      `);
+    });
+
+    /* 6. Header’da eng yaqin mashg‘ulot */
+    if (sessions.length) {
+      const daysLeft = Math.ceil((sessions[0].date - Date.now()) / 86_400_000);
+      document.getElementById('subHeader').textContent =
+        `Ближайший класс начнётся через ${daysLeft} ${daysLeft === 1 ? 'день' : 'дня'}.`;
+    } else {
+      document.getElementById('subHeader').textContent = 'Пока нет запланированных сессий.';
+    }
+  });
+  </script>
+</body>
+</html>

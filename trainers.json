@@ -1,0 +1,119 @@
+[
+  {
+    "name": "Aziz Estet",
+    "role": "Тренер по бодибилдингу",
+    "image": "assets/img/team/aziz.jpg",
+    "video": "https://www.youtube.com/embed/71L3GXKzGi4?si=lpBHbEHZKXs1UMVD",
+    "bio": "Aziz Estet — сертифицированный инструктор IFBB с 10-летним опытом. Его программы сочетают силовую подготовку и грамотное питание, что позволяет ученикам безопасно набирать мышечную массу.",
+    "achievements": [
+      "Двукратный чемпион Узбекистана по бодибилдингу — 2018, 2019",
+      "Лучший фитнес-тренер Central Asia Fitness Awards — 2020",
+      "Судья категории Men’s Physique — IFBB 2022"
+    ],
+    "skills": [
+      { "title": "Bodybuilding Training", "percent": 95 },
+      { "title": "Nutrition Coaching", "percent": 90 },
+      { "title": "Cardio Training", "percent": 80 },
+      { "title": "Functional Fitness", "percent": 70 }
+    ],
+    "rating": 5,
+    "contact": {
+      "gym": "GymEnergy, Ташкент",
+      "address": "11A, Navoiy шоссе, Shayhontohur, Uzbekistan",
+      "phone": ["+998 99 824-96-97"],
+      "email": ["aziz.estet@gymenergy.uz"]
+    },
+    "social": {
+      "facebook": "#",
+      "instagram": "#",
+      "twitter": "#",
+      "phone": "#"
+    }
+  },
+
+  {
+    "name": "Axad",
+    "role": "Тренер по бодибилдингу",
+    "image": "assets/img/team/axad.jpg",
+    "video": "",
+    "bio": "Axad специализируется на силовой выносливости и восстановлении после травм.",
+    "achievements": ["Серебро IFBB Classic 2021"],
+    "skills": [
+      { "title": "Bodybuilding", "percent": 90 },
+      { "title": "Rehab Training", "percent": 85 }
+    ],
+    "rating": 4,
+    "contact": {
+      "phone": ["+998 90 111-22-33"],
+      "email": ["axad@gymenergy.uz"]
+    },
+    "social": {}
+  },
+
+  {
+    "name": "Firdavs",
+    "role": "Фитнес-тренер",
+    "image": "assets/img/team/firdavs.jpg",
+    "video": "",
+    "bio": "Фирдавс ведёт групповые функциональные и HIIT-тренировки.",
+    "achievements": [],
+    "skills": [
+      { "title": "Fitness Training", "percent": 92 },
+      { "title": "HIIT", "percent": 88 }
+    ],
+    "rating": 5,
+    "contact": {
+      "phone": ["+998 90 222-33-44"],
+      "email": ["firdavs@gymenergy.uz"]
+    },
+    "social": {}
+  },
+
+  {
+    "name": "Lyudmila",
+    "role": "Инструктор йоги",
+    "image": "assets/img/team/lyudmila.jpg",
+    "video": "",
+    "bio": "Сертифицирована Yoga Alliance RYT-500. 7 лет преподавания хатха-йоги и медитации.",
+    "achievements": ["RYT-500 Yoga Alliance"],
+    "skills": [
+      { "title": "Yoga Teaching", "percent": 97 },
+      { "title": "Meditation", "percent": 95 }
+    ],
+    "rating": 5,
+    "contact": {},
+    "social": {}
+  },
+
+  {
+    "name": "Dominika",
+    "role": "Тренер боевых искусств",
+    "image": "assets/img/team/dominika.jpg",
+    "video": "",
+    "bio": "Чёрный пояс III дан по карате, чемпионка Европы 2021.",
+    "achievements": ["Чемпионка Европы 2021"],
+    "skills": [
+      { "title": "Martial Arts", "percent": 98 },
+      { "title": "Cardio", "percent": 80 }
+    ],
+    "rating": 4,
+    "contact": {},
+    "social": {}
+  },
+
+  {
+    "name": "Selena",
+    "role": "Кардио-тренер",
+    "image": "assets/img/team/selena.jpg",
+    "video": "",
+    "bio": "Селенa проводит авторские кардио-программы и программы снижения веса.",
+    "achievements": [],
+    "skills": [
+      { "title": "Cardio Training", "percent": 96 },
+      { "title": "Weight Loss", "percent": 90 }
+    ],
+    "rating": 5,
+    "contact": {},
+    "social": {}
+  }
+]
